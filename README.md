@@ -16,40 +16,40 @@ pip install httplib2 argparse BeautifulSoup4
 
 使用方式
 
-python main.py 
-
-usage: main.py [-h] {clear,add,list,check,delete} ...
-
-main.py: error: too few arguments
+    python main.py 
+    
+    usage: main.py [-h] {clear,add,list,check,delete} ...
+    
+    main.py: error: too few arguments
 
 
 添加商品：
 
-python main.py  add -e "112233@qq.com" -u "http://item.jd.com/1035733.html" -p 1000 -t "2018-01-01"
-
-在2018年1月1日之前如果http://item.jd.com/1035733.html的价格低于1000就给112233
+    python main.py  add -e "112233@qq.com" -u "http://item.jd.com/1035733.html" -p 1000 -t "2018-01-01"
+    
+    在2018年1月1日之前如果http://item.jd.com/1035733.html的价格低于1000就给112233
 
 
 检测商品价格：
 
-python main.py check 0 
-
-0代表检测所有商品，也可以为指定ID
+    python main.py check 0 
+    
+    0代表检测所有商品，也可以为指定ID
 
 
 
 查看当前在监测的商品
 
-python main.py list
+    python main.py list
 
 
 不再监测某个商品：
 
-python main.py delete 1
+    python main.py delete 1
 
 
 清除缓存（所有失效的商品）：
 
-python main.py  clear
+    python main.py  clear
 
 
